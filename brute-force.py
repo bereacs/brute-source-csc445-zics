@@ -1,8 +1,9 @@
+import math
 ''' File: bruteforce.py
     A small class which explores the brute force solution method on the traveling salesman problem
     Primarily written by Dr. Jan Pearce of Berea College'''
 
-#    number_routes method written by: TODO: ADD NAME(S) HERE
+#    number_routes method written by: TODO: Ayoubim, Pulidoc, Adhkaris, Grayi
 
 
 import random # possibly needed by main()
@@ -30,9 +31,8 @@ class BruteForce:
 
     def number_routes(self):
         ''' Returns the number of possible routes assuming that home is one specific city'''
-        count=1
-        #TODO Complete this method
-
+        count = math.factorial(self.n - 1)
+        self.num_routes = count
         # print(count) # for debugging
         return (count)
 
